@@ -1,0 +1,4 @@
+:root {
+    --dark-bg: radial-gradient(rgb(46, 46, 46), black);
+    --dark-txt: white;
+}
