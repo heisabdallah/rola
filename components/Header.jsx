@@ -37,13 +37,13 @@ const Header = () => {
                 </svg>
 
                 <ul>
-                    <li><Link href="/products">Products</Link></li>
-                    <li><Link href="/services">Services</Link></li>
-                    <li><Link href="/location">Location</Link></li>
+                    <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About</Link></li>
+                    <li><Link href="/products">Products</Link></li>
+                    <li><Link href="/contact">Contact Us</Link></li>
                 </ul>
             </nav>
-            <h2>Shop</h2>
+            <h2><Link>Contact us</Link></h2>
             
 
         </header>
