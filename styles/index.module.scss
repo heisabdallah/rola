@@ -6,8 +6,6 @@
     grid-template-rows: .1fr 1fr .2fr .01fr;
     text-align: center;
     gap: .5em;
-    // background-image: var(--dark-bg);
-    // color: var(--dark-txt);
 }
 
 
@@ -41,7 +39,6 @@
             text-align: center;
             &:active {
                 background-color: #005fb2;  
-                // border-color: #005fb2;
             }
             a {
                 color: white;
@@ -76,7 +73,6 @@
 
 .footer {
     background-color: rgb(20, 20, 20);
-    // background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
     color: white;
     .contact_section {
         margin: 6em 0;
@@ -102,10 +98,6 @@
             box-shadow: 1px 1px 10px;
             border-radius: 20px;
         }
-
-        // .text_field {
-        //     height: 300px;
-        // }
 
         .submit_btn {
             text-transform: uppercase;
@@ -161,16 +153,10 @@
             }
         }
     }
-
-    // .aside {
-    //     display: block;
-    //     grid-area: aside;
-    // }
     
     .footer {
         grid-area: footer;
     }
 }
-
 
                     // --- DESKTOP Style ---

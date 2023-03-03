@@ -1,12 +1,9 @@
 import MainContent from "@/components/MainContent"
 import styles from "../styles/index.module.scss"
-import headerStyles from "../styles/Header.module.scss"
 import CustomHead from "../components/props/customHead"
 import Header from "../components/Header"
 import Link from "next/link"
 import Image from "next/image"
-// import logo from "public/logo.png"
-import toTop from "public/toTop.png"
 import rola1 from "public/images/rola1.jpg"
 import rola2 from "public/images/rola2.jpg"
 import rola3 from "public/images/rola3.jpg"
@@ -14,20 +11,9 @@ import rola4 from "public/images/rola4.jpg"
 import rola5 from "public/images/rola5.jpg"
 import rola6 from "public/images/rola6.jpg"
 import { useState } from "react"
-import BackToTop from "react-back-to-top-button";
 
 export default function Home(){
     
-    const [nav, setNav] = useState(headerStyles.nav)
-
-    const handleOpenNav = () => {
-        setNav(headerStyles.openNav)
-    }
-
-    const handleCloseNav = () => {
-        setNav(headerStyles.closeNav)
-    }
-
         
 
     return (
@@ -41,13 +27,14 @@ export default function Home(){
             <div className={styles.container}>
                     <Header />
 
-                    <main className={styles.main} onClick={handleCloseNav}>
+                    <main className={styles.main}>
                         <section>
                             <div className={styles.hero_section}>
                                 <h1>Affordable meets excellence</h1>
                                  <button className={styles.hero_cta}><Link href="/products">Browse Our Products</Link></button>
                             </div>
                         </section>
+                        <Link href="#content" scroll={false} >Main Content</Link>
                         <section className={styles.aboutSection}>
                             <div className={styles.about}>
                                 <h1>Who are we?</h1>
@@ -108,17 +95,6 @@ export default function Home(){
                                 />
                             </div>
                         </section>
-                        <BackToTop
-                            showOnScrollUp
-                            showAt={100}
-                            speed={10}
-                            easing="easeInOutQuint">
-                            <Image className={styles.toTop}
-                            src={toTop}
-                            width={50}
-                            height={50}
-                            />
-                        </BackToTop>
                         
                     </main>
 
@@ -126,8 +102,8 @@ export default function Home(){
                             <MainContent />
                     </aside> */}
 
-                    <footer className={styles.footer} onClick={handleCloseNav}>
-                        <div className={styles.contact_section}>
+                    <footer className={styles.footer}>
+                        <div className={styles.contact_section} id="content">
                             <h1 className={styles.cont_title}>CONTACT</h1>
                             <div className={styles.form}>
                                 <h1>Reach To Us</h1>
