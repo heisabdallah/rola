@@ -46,53 +46,46 @@ export default function Home(){
                         </section>
                         <section className={styles.imageGrid}>
                             <div className={styles.imageWrapper}>
-                                <Image 
-                                    src={rola6}
-                                    width={1440}
-                                    height={1024}
-                                    loading="lazy"
-                                />
-    
+                                <div className={styles.image}>
+                                    <Image 
+                                        src={rola6}
+                                    />
+                                </div>
                             </div>
                             <div className={styles.imageWrapper}>
-                                <Image 
-                                    src={rola4}
-                                    width={1440}
-                                    height={1024}
-                                    loading="lazy"
-                                />
+                                <div className={styles.image}>
+                                    <Image 
+                                        src={rola5}
+                                    />
+                                </div>
                             </div>
                             <div className={styles.imageWrapper}>
-                                <Image 
-                                    src={rola3}
-                                    width={1440}
-                                    height={1024}
-                                    loading="lazy"
-                                />
+                                <div className={styles.image}>
+                                    <Image 
+                                        src={rola4}
+                                    />
+                                </div>
                             </div>
                             <div className={styles.imageWrapper}>
-                                <Image 
-                                    src={rola5}
-                                    width={1440}
-                                    height={1024}
-                                    loading="lazy"
-                                />
+                                <div className={styles.image}>
+                                    <Image 
+                                        src={rola3}
+                                    />
+                                </div>
                             </div>
                             <div className={styles.imageWrapper}>
-                                <Image 
-                                    src={rola1}
-                                    width={1440}
-                                    height={1024}
-                                    loading="lazy"
-                                />
+                                <div className={styles.image}>
+                                    <Image 
+                                        src={rola2}
+                                    />
+                                </div>
                             </div>
                             <div className={styles.imageWrapper}>
-                                <Image 
-                                    src={rola2}
-                                    width={1440}
-                                    height={1024}
-                                    loading="lazy"
-                                />
+                                <div className={styles.image}>
+                                    <Image 
+                                        src={rola1}
+                                    />
+                                </div>
                             </div>
                         </section>
                         
