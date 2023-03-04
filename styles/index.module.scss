@@ -51,7 +51,7 @@
     .imageGrid {
         display: grid;
         grid-template-rows: 1fr;
-        gap: 1em;
+        gap: .5em;
 
         .imageWrapper {
             .image {
