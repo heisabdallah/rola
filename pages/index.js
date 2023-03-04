@@ -47,46 +47,71 @@ export default function Home(){
                         <section className={styles.imageGrid}>
                             <div className={styles.imageWrapper}>
                                 <div className={styles.image}>
-                                    <Image 
-                                        src={rola6}
-                                    />
-                                </div>
+                                    <Image src={rola6} />
+                                    <div className={styles.heading}>
+                                        <h1>ROLA</h1>
+                                        <div className={styles.info}>
+                                            <p>Laborum in quis deserunt laborum irure. Minim veniam commodo tempor Lorem amet nulla. Eiusmod cupidatat exercitation aliqua id duis in. Laborum ipsum quis excepteur do reprehenderit amet pariatur qui dolor veniam laboris labore aliqua cupidatat. Deserunt culpa aliquip consectetur reprehenderit culpa.</p>
+                                        </div>
+                                    </div> 
+                                </div> 
                             </div>
                             <div className={styles.imageWrapper}>
                                 <div className={styles.image}>
-                                    <Image 
-                                        src={rola5}
-                                    />
-                                </div>
+                                    <Image src={rola5} />
+                                    <div className={styles.heading}>
+                                        <h1>ROLA</h1>
+                                        <div className={styles.info}>
+                                            <p>Laborum in quis deserunt laborum irure. Minim veniam commodo tempor Lorem amet nulla. Eiusmod cupidatat exercitation aliqua id duis in. Laborum ipsum quis excepteur do reprehenderit amet pariatur qui dolor veniam laboris labore aliqua cupidatat. Deserunt culpa aliquip consectetur reprehenderit culpa.</p>
+                                        </div>
+                                    </div> 
+                                </div> 
                             </div>
                             <div className={styles.imageWrapper}>
                                 <div className={styles.image}>
-                                    <Image 
-                                        src={rola4}
-                                    />
-                                </div>
+                                    <Image src={rola4} />
+                                    <div className={styles.heading}>
+                                        <h1>ROLA</h1>
+                                        <div className={styles.info}>
+                                            <p>Laborum in quis deserunt laborum irure. Minim veniam commodo tempor Lorem amet nulla. Eiusmod cupidatat exercitation aliqua id duis in. Laborum ipsum quis excepteur do reprehenderit amet pariatur qui dolor veniam laboris labore aliqua cupidatat. Deserunt culpa aliquip consectetur reprehenderit culpa.</p>
+                                        </div>
+                                    </div> 
+                                </div> 
                             </div>
                             <div className={styles.imageWrapper}>
                                 <div className={styles.image}>
-                                    <Image 
-                                        src={rola3}
-                                    />
-                                </div>
+                                    <Image src={rola3} />
+                                    <div className={styles.heading}>
+                                        <h1>ROLA</h1>
+                                        <div className={styles.info}>
+                                            <p>Laborum in quis deserunt laborum irure. Minim veniam commodo tempor Lorem amet nulla. Eiusmod cupidatat exercitation aliqua id duis in. Laborum ipsum quis excepteur do reprehenderit amet pariatur qui dolor veniam laboris labore aliqua cupidatat. Deserunt culpa aliquip consectetur reprehenderit culpa.</p>
+                                        </div>
+                                    </div> 
+                                </div> 
                             </div>
                             <div className={styles.imageWrapper}>
                                 <div className={styles.image}>
-                                    <Image 
-                                        src={rola2}
-                                    />
-                                </div>
+                                    <Image src={rola2} />
+                                    <div className={styles.heading}>
+                                        <h1>ROLA</h1>
+                                        <div className={styles.info}>
+                                            <p>Laborum in quis deserunt laborum irure. Minim veniam commodo tempor Lorem amet nulla. Eiusmod cupidatat exercitation aliqua id duis in. Laborum ipsum quis excepteur do reprehenderit amet pariatur qui dolor veniam laboris labore aliqua cupidatat. Deserunt culpa aliquip consectetur reprehenderit culpa.</p>
+                                        </div>
+                                    </div> 
+                                </div> 
                             </div>
                             <div className={styles.imageWrapper}>
                                 <div className={styles.image}>
-                                    <Image 
-                                        src={rola1}
-                                    />
-                                </div>
+                                    <Image src={rola1} />
+                                    <div className={styles.heading}>
+                                        <h1>ROLA</h1>
+                                        <div className={styles.info}>
+                                            <p>Laborum in quis deserunt laborum irure. Minim veniam commodo tempor Lorem amet nulla. Eiusmod cupidatat exercitation aliqua id duis in. Laborum ipsum quis excepteur do reprehenderit amet pariatur qui dolor veniam laboris labore aliqua cupidatat. Deserunt culpa aliquip consectetur reprehenderit culpa.</p>
+                                        </div>
+                                    </div> 
+                                </div> 
                             </div>
+
                         </section>
                         
                     </main>

@@ -54,19 +54,58 @@
         gap: .5em;
 
         .imageWrapper {
+            position: relative;
+
             .image {
                 overflow: hidden;
-                // margin: .5em 0;
-            }
 
-            img{
-                display: block;
-                width: 100%;
-                height: auto;
-                transition: 1s ease-in-out;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    transition: 1s ease-in-out;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
+                .heading {
+                    display: none;
+                    .info {
+                        display: none;
+                    }
+                }
+
                 &:hover{
-                    cursor: pointer;
-                    transform: scale(1.1);
+                    .heading {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 25%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: white;
+                        font-size: 24px;
+                        transition: 1s ease-in-out;
+                        &:hover {
+                            height: 50%;
+                            .info {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 30%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: white;
+                                font-size: x-small;
+                            }
+                        }
+                    }
                 }
             }
         }
