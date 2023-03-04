@@ -79,6 +79,7 @@
                 &:hover{
                     .heading {
                         position: absolute;
+                        user-select: none;
                         bottom: 0;
                         left: 0;
                         width: 100%;
