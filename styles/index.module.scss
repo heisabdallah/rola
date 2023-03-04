@@ -51,11 +51,12 @@
     .imageGrid {
         display: grid;
         grid-template-rows: 1fr;
+        gap: 1em;
 
         .imageWrapper {
             .image {
                 overflow: hidden;
-                margin: 1em;
+                // margin: .5em 0;
             }
 
             img{
