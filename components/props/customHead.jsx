@@ -4,7 +4,7 @@ export default function CustomHead({ title, description, keywords, url }) {
     return (
         <div>
             <Head>
-                <title>{title}</title>
+                <title>{`ROLA: ${title}`}</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content={keywords} />
                 <link rel="canonical" href={url} />
