@@ -69,7 +69,7 @@ export default function Home(){
                                  <button className={styles.hero_cta}><Link href="/products">Browse Our Products</Link></button>
                             </div>
                         </section>
-                        <Link href="#content" scroll={false} >Main Content</Link>
+                        <Link className={styles.contact_scroll} href="#contact-section" scroll={false} >Contact Section</Link>
                         <section className={styles.aboutSection}>
                             <div className={styles.about}>
                                 <h1>Who are we?</h1>
@@ -152,8 +152,8 @@ export default function Home(){
                     </main>
 
                     <footer className={styles.footer} onClick={handleCloseNav}>
-                        <div className={styles.contact_section} id="content">
-                            <h1 className={styles.cont_title}>CONTACT</h1>
+                        <div className={styles.contact_section} id="contact-section">
+                            {/* <h1 className={styles.cont_title}>CONTACT</h1> */}
                             <div className={styles.form}>
                                 <h1>Reach To Us</h1>
                                 <form action="/feedback">
