@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import logo from "public/logo.png"
 import { useState } from "react"
+import logo from "public/logo.png"
 import styles from "../styles/Header.module.scss"
 import MainContent from "@/components/MainContent"
 const Header = () => {
