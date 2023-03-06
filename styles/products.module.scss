@@ -137,7 +137,8 @@
                 width: auto;
                 height: auto;
                 text-transform: uppercase;
-                transform: translateX(0%);
+                transform: none;
+                transition: none;
                 // display: none;
                 
                 .closeBtn {
@@ -165,7 +166,7 @@
                 }
             }
             .closeNav {
-                transform: translateX(0%);
+                transform: none;
             }
         }
 
