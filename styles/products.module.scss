@@ -8,6 +8,7 @@
     .header {
         position: fixed;
         background-color: white;
+        box-shadow: 1px 1px 5px;
         padding: 1em;
         display: flex;
         justify-content: space-between;
@@ -106,7 +107,7 @@
             "footer"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: .1fr 1fr .2fr;
+        grid-template-rows: .1fr 1fr .1fr;
 
         .header {
             display: flex;
@@ -130,6 +131,8 @@
                 justify-content: center;
                 align-items: center;
                 background-color: transparent;
+                border-radius: 10px;
+                padding: .3em 1em;
                 box-shadow: none;
                 width: auto;
                 height: auto;
@@ -153,10 +156,10 @@
                         text-decoration: none;
                         padding: .5em .5em .5em .5em;
                         color: black;
+                        font-weight: 600;
                         display: inline;
                         &:hover {
-                            background-color: black;
-                            color: white;
+                            border-radius: 10px;
                         }
                     }
                 }

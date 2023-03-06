@@ -57,7 +57,6 @@ const Contact = () => {
                 </header>
                 <footer className={styles.footer} onClick={handleCloseNav}>
                     <div className={styles.contact_section} id="content">
-                        <h1 className={styles.cont_title}>CONTACT</h1>
                         <div className={styles.form}>
                             <h1>Reach To Us</h1>
                             <form action="/feedback">
