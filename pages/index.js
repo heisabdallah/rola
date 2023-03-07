@@ -156,7 +156,7 @@ export default function Home(){
                             {/* <h1 className={styles.cont_title}>CONTACT</h1> */}
                             <div className={styles.form}>
                                 <h1>Reach To Us</h1>
-                                <form action="/feedback">
+                                <form action="/feedback" method="POST">
                                     {/* <label for="flname">Full name</label> */}
                                     <input type="text" id="flname" name="flname" placeholder="Name" />
                                     {/* <label for="email">Email</label> */}
