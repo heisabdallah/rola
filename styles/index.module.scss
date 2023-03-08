@@ -70,7 +70,6 @@
                     padding: 1em 2em;
                     color: black;
                     display: block;
-                    // font-size: 1.3rem;
                     &:hover {
                         background-color: black;
                         color: white;
@@ -251,10 +250,6 @@
         color: white;
         .contact_section {
             margin: 6em 0;
-            .cont_title {
-                font-weight: 900;
-                margin: 0 0 4em 0;
-            }
         }
     
         .form {
@@ -271,8 +266,8 @@
                 input {
                     padding: 2em;
                     margin: 2em;
-                    border: 2px solid black;
-                    box-shadow: 1px 1px 10px;
+                    border: 2px solid rgba(0, 0, 0, 0.307);
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.307);
                     border-radius: 20px;
                 }
         
@@ -321,10 +316,6 @@
             .menuBtn {
                 display: none;
             }
-        
-            .logo {
-                margin: 0 0 0 1.5em;
-            }
 
             nav {
                 position: static;
@@ -344,17 +335,13 @@
                 }
         
                 ul {
-                    list-style: none;
                     padding: 0;
-                    font-size: 1.3rem;
                     text-align: center;
                     li {
                         display: inline-block;
                     }
                     a {
-                        text-decoration: none;
                         padding: .5em .5em .5em .5em;
-                        color: black;
                         font-weight: 600;
                         display: inline;
                         &:hover {
@@ -374,36 +361,8 @@
             .hero_section {
     
                 h1{
-                    text-transform: uppercase;
                     margin: 1em 4em 0 0;
-                    padding: 0 0 0 .5em;
-                    text-align: left;
                     font-size: 8rem;
-                    line-height: 1em;
-                }
-        
-                .hero_cta {
-                    display: inline-block;
-                    outline: none;
-                    cursor: pointer;
-                    padding: .5em 1em;
-                    margin: 8em 0;
-                    background-image: radial-gradient(rgb(120, 0, 0), black);
-                    border-radius: 0.5rem;
-                    border: none;
-                    color: #fff;
-                    font-size: 13px;
-                    line-height: 30px;
-                    font-weight: 400;
-                    text-align: center;
-                    &:active {
-                        background-color: #005fb2;  
-                    }
-                    a {
-                        color: white;
-                        text-decoration: none;
-                        padding: 1em .1em;
-                    }
                 }
             }
     
@@ -423,45 +382,13 @@
         .footer {
             grid-area: footer;
             .contact_section {
-            margin: 6em 0;
             display: flex;
             justify-content: center;
-            .cont_title {
-                color: red;
-                font-weight: 900;
-                margin: 0 0 1em 0;
-            }
             }
     
             .form {
-                margin: 2em;
-                padding: 2em 0;
-                width: 20vw;
-
-                form {
-                    
-                    input {
-                        padding: 2em;
-                        margin: 2em;
-                        border: 2px solid black;
-                        box-shadow: 1px 1px 10px;
-                        border-radius: 20px;
-                    }
-            
-                    .submit_btn {
-                        text-transform: uppercase;
-                        font-weight: 800;
-                        padding: 2em 5em;
-                        border: none;
-                        border-radius: 20px;
-                        background-image: radial-gradient(black, rgb(0, 21, 19),);
-                        color: white;
-                        &:active{
-                            background-image: radial-gradient(black, rgb(37, 1, 1),);
-                        }
-                    }
-                }
-                
+                // width: 20vw;
+                padding: 5em;
             }
         }
     }
