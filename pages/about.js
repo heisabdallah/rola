@@ -77,7 +77,7 @@ const About = () => {
 
                     <div>
                         {loading ? (
-                            <p>Loading...</p>
+                            <p className={styles.loading}>Loading...</p>
                             ) : (
                             products.map(product => (
                             <div key={product.id} className={styles.data}>
