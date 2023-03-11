@@ -90,7 +90,7 @@ const About = () => {
                         )
                     }
                     <div className={styles.form}>
-                        <form method="POST" onSubmit={handleSubmit} action={productAPI} >
+                        <form method="POST" action={productAPI} onSubmit={handleSubmit} >
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" />
 
