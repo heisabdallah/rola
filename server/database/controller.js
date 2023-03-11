@@ -6,7 +6,7 @@ import Product from "../model/productModel"
 const getProducts = async (req, res) => {
     try{
         const products = await Product.find({})
-        res.status(200).json(products)
+        // res.status(200).json(products)
 
     }catch(error) {
         res.status(404).json({ error: "Products not found" })
@@ -18,7 +18,7 @@ const getProduct = async (req, res) => {
     try{
         const { productId} = req.query
         const product = await Product.findById(productId)
-        res.status(200).json(product)
+        // res.status(200).json(product)
 
     }catch(error) {
         res.status(404).json({ error: "Product not found" })
@@ -30,7 +30,7 @@ const postProducts = async (req, res) => {
     try {
       const formData = req.body;
       const product = await Product.create(formData);
-      res.redirect('/about')
+      await res.redirect('/about')
 
     } catch (error) {
       return res.status(404).json({ error });
@@ -45,7 +45,7 @@ const updateProduct = async (req, res) => {
 
         if(productId && formData){
             const product = await Product.findByIdAndUpdate(productId, formData)
-            res.status(200).json(product)
+            // res.status(200).json(product)
         }
 
     } catch (error) {
