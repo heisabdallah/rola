@@ -5,10 +5,9 @@ import Link from "next/link";
 import CustomHead from "../components/props/customHead"
 import logo from "public/logo.png"
 
-const productAPI = process.env.productAPI
-
 const About = () => {
-    
+    const productAPI = "api/products"
+
     const [nav, setNav] = useState(styles.nav)
 
     const handleOpenNav = () => {
