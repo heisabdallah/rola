@@ -1,5 +1,4 @@
 
-import { redirect } from "next/dist/server/api-utils"
 import Product from "../model/productModel"
 
 // GET 

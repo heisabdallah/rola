@@ -6,7 +6,6 @@ import CustomHead from "../components/props/customHead"
 import logo from "public/logo.png"
 
 const About = () => {
-
     const productAPI = "api/products"
 
     const [nav, setNav] = useState(styles.nav)
@@ -21,10 +20,11 @@ const About = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
+    }
 
     const [products, setProducts] = useState([])
 
-   useEffect(() => {
+    useEffect(() => {
         const fetchProducts = async () => {
             const res = await fetch(productAPI)
             const data = await res.json()
@@ -33,10 +33,7 @@ const About = () => {
             
         }
         fetchProducts()
-   })
-
-   
-
+    })
 
     return ( 
         <>
@@ -116,7 +113,7 @@ const About = () => {
             </div>
         </>
         
-     );
+     )
 }
- 
+
 export default About;
