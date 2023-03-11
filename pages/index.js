@@ -55,8 +55,8 @@ export default function Home(){
                         <Link href="/" className={styles.logo}>
                             <Image
                                 src={logo}
-                                width={34}
-                                height={34}
+                                width={40}
+                                height={40}
                                 alt="logo"
                             />
                         </Link>

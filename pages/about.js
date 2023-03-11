@@ -1,11 +1,13 @@
 import styles from "../styles/products.module.scss"
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import CustomHead from "../components/props/customHead"
 import logo from "public/logo.png"
 
 const About = () => {
+
+    const productAPI = "api/products"
 
     const [nav, setNav] = useState(styles.nav)
 
@@ -16,6 +18,19 @@ const About = () => {
     const handleCloseNav = () => {
         setNav(styles.closeNav)
     }
+
+    const [products, setProducts] = useState([])
+
+   useEffect(() => {
+        const fetchProducts = async () => {
+            const res = await fetch(productAPI)
+            const data = await res.json()
+
+            setProducts(data)
+            
+        }
+        fetchProducts()
+   })
 
 
     return ( 
@@ -59,6 +74,37 @@ const About = () => {
                     <h1>About PAGE</h1>
                     <p>Sunt velit et mollit esse enim do cillum consectetur dolore excepteur magna. Nisi tempor minim anim ea magna ad voluptate in. Amet deserunt magna incididunt consectetur. Eu qui culpa sit minim dolor esse consequat.</p>
                     <p>Eiusmod eu nulla ad duis veniam mollit commodo commodo dolor. Id cillum occaecat voluptate ipsum et laboris proident occaecat occaecat. Quis aliqua veniam aute duis qui velit ea aute laborum. Tempor consectetur mollit aliqua excepteur occaecat voluptate aliquip exercitation eu enim. Occaecat qui proident excepteur sunt laborum minim consequat. Consequat aliqua officia deserunt quis commodo proident aliqua enim culpa aute. Fugiat cillum deserunt aliqua fugiat dolor elit commodo.</p>
+
+                    {   
+                        products.map(product => (
+                            <div key={product.id} className={styles.data}>
+                                <h3>{product.name}</h3>
+                                <p>{product.make}</p>
+                                <p>{product.model}</p>
+                                <p>{product.price}</p>
+                            </div>
+                        )
+                            
+                        )
+                    }
+                    <div className={styles.form}>
+                        <form method="POST" action={productAPI}>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" />
+
+                            <label for="make">Make:</label>
+                            <input type="text" id="make" name="make" />
+
+                            <label for="model">Model:</label>
+                            <input type="text" id="model" name="model" />
+
+                            <label for="price">Price:</label>
+                            <input type="text" id="price" name="price" />
+
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                    
 
                 </main>
 
