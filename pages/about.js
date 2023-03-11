@@ -104,7 +104,7 @@ const About = () => {
                             <input type="text" id="model" name="model" />
 
                             <label for="price">Price:</label>
-                            <input type="text" pattern="\d*" id="price" name="price" />
+                            <input type="tel" id="price" name="price" />
 
                             <input type="submit" value="Submit" />
                         </form>
