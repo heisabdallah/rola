@@ -1,5 +1,4 @@
 
-import { redirect } from "next/dist/server/api-utils"
 import Product from "../model/productModel"
 
 // GET 
@@ -58,7 +57,7 @@ const deleteProduct = async (req, res) => {
     try {
         const { productId } = req.query
         const product = await Product.findByIdAndDelete(productId)
-        res.status(200).json({ deleted: productId })
+        // res.status(200).json({ deleted: productId })
 
     } catch (error) {
         res.status(404).json({error: "Error while Deleting Product!"})
