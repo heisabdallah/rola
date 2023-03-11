@@ -103,7 +103,7 @@ const About = () => {
                             <label for="price">Price:</label>
                             <input type="number" id="price" name="price" />
 
-                            <input type="submit" value="Submit" onClick={handleSubmit}/>
+                            <input type="submit" value="Submit"/>
                         </form>
                     </div>
                     
