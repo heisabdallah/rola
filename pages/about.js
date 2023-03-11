@@ -19,6 +19,9 @@ const About = () => {
         setNav(styles.closeNav)
     }
 
+    const handleSubmit = async (event) => {
+        event.preventDefault()
+
     const [products, setProducts] = useState([])
 
    useEffect(() => {
@@ -31,6 +34,8 @@ const About = () => {
         }
         fetchProducts()
    })
+
+   
 
 
     return ( 
@@ -88,7 +93,7 @@ const About = () => {
                         )
                     }
                     <div className={styles.form}>
-                        <form method="POST" action={productAPI}>
+                        <form method="POST" action={productAPI} onSubmit={handleSubmit}>
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" />
 
