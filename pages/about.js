@@ -6,7 +6,7 @@ import CustomHead from "../components/props/customHead"
 import logo from "public/logo.png"
 
 const About = () => {
-    const productAPI = "api/products"
+    const productAPI = process.env.productAPI
 
     const [nav, setNav] = useState(styles.nav)
 
