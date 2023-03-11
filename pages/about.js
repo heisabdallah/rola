@@ -18,11 +18,8 @@ const About = () => {
         setNav(styles.closeNav)
     }
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-    }
-
     const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -30,6 +27,7 @@ const About = () => {
             const data = await res.json()
 
             setProducts(data)
+            setLoading(false);
             
         }
         fetchProducts()
@@ -77,18 +75,20 @@ const About = () => {
                     <p>Sunt velit et mollit esse enim do cillum consectetur dolore excepteur magna. Nisi tempor minim anim ea magna ad voluptate in. Amet deserunt magna incididunt consectetur. Eu qui culpa sit minim dolor esse consequat.</p>
                     <p>Eiusmod eu nulla ad duis veniam mollit commodo commodo dolor. Id cillum occaecat voluptate ipsum et laboris proident occaecat occaecat. Quis aliqua veniam aute duis qui velit ea aute laborum. Tempor consectetur mollit aliqua excepteur occaecat voluptate aliquip exercitation eu enim. Occaecat qui proident excepteur sunt laborum minim consequat. Consequat aliqua officia deserunt quis commodo proident aliqua enim culpa aute. Fugiat cillum deserunt aliqua fugiat dolor elit commodo.</p>
 
-                    {   
-                        products.map(product => (
+                    <div>
+                        {loading ? (
+                            <p>Loading...</p>
+                            ) : (
+                            products.map(product => (
                             <div key={product.id} className={styles.data}>
                                 <h3>{product.name}</h3>
                                 <p>{product.make}</p>
                                 <p>{product.model}</p>
                                 <p>{product.price}</p>
                             </div>
-                        )
-                            
-                        )
-                    }
+                            ))
+                        )}
+                    </div>
                     <div className={styles.form}>
                         <form method="POST" action={productAPI} >
                             <label for="name">Name:</label>
