@@ -30,7 +30,7 @@ const postProducts = async (req, res) => {
     try {
       const formData = req.body;
       await Product.create(formData)
-      res.redirect(303, '/about');
+      res.redirect(302, '/about');
 
     } catch (error) {
       return res.status(404).json({ error });
