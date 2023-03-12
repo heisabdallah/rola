@@ -25,7 +25,8 @@ const productsComp = () => {
         const response = await fetch(`${productAPI}/${productId}`, {
             method: 'DELETE'
         })
-        const data = response.json()
+        const data = await response.json()
+        fetchProducts()
     }
 
     return ( 
