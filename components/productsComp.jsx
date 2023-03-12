@@ -46,6 +46,7 @@ const productsComp = () => {
                     <p>Make: {product.make}</p>
                     <p>Model: {product.model}</p>
                     <p>Price: {product.price}</p>
+                    <br></br>
                     <button onClick={() => handledelete(product._id)}>DELETE</button>
                 </div>
                 ))
