@@ -27,7 +27,7 @@ const productsComp = () => {
                 ) : (
                 products.map(product => (
                 <div key={product.id} className={styles.data}>
-                    <h3>Name: {product.name}</h3>
+                    <p>Name: {product.name}</p>
                     <p>Make: {product.make}</p>
                     <p>Model: {product.model}</p>
                     <p>Price: {product.price}</p>
