@@ -1,4 +1,5 @@
 import styles from "../styles/pages/products.module.scss"
+import formStyle from "../styles/components/productForm.module.scss"
 import image1 from "public/images/rola1.jpg"
 import Image from "next/image";
 import { useState } from "react";
@@ -6,7 +7,6 @@ import Link from "next/link";
 import CustomHead from "../components/props/customHead"
 import logo from "public/logo.png"
 import ProductsComp from "../components/productsComp"
-import postProduct from "../components/postProduct";
 
 const Products = () => {
 
@@ -61,7 +61,6 @@ const Products = () => {
                 </header>
                 <main className={styles.main} onClick={handleCloseNav}>
                     <h1>Products PAGE</h1>
-                    <postProduct />
                     <p>Sunt velit et mollit esse enim do cillum consectetur dolore excepteur magna. Nisi tempor minim anim ea magna ad voluptate in. Amet deserunt magna incididunt consectetur. Eu qui culpa sit minim dolor esse consequat.</p>
                     <Image
                         src={image1}
@@ -69,23 +68,23 @@ const Products = () => {
                     <p>Eiusmod eu nulla ad duis veniam mollit commodo commodo dolor. Id cillum occaecat voluptate ipsum et laboris proident occaecat occaecat. Quis aliqua veniam aute duis qui velit ea aute laborum. Tempor consectetur mollit aliqua excepteur occaecat voluptate aliquip exercitation eu enim. Occaecat qui proident excepteur sunt laborum minim consequat. Consequat aliqua officia deserunt quis commodo proident aliqua enim culpa aute. Fugiat cillum deserunt aliqua fugiat dolor elit commodo.</p>
                     
                     <ProductsComp />
-                    <div className={styles.form}>
-                    <form method="POST" action={productAPI} >
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" />
+                    <div className={formStyle.form}>
+                        <form method="POST" action={productAPI} >
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" />
 
-                        <label for="make">Make:</label>
-                        <input type="text" id="make" name="make" />
+                            <label for="make">Make:</label>
+                            <input type="text" id="make" name="make" />
 
-                        <label for="model">Model:</label>
-                        <input type="text" id="model" name="model" />
+                            <label for="model">Model:</label>
+                            <input type="text" id="model" name="model" />
 
-                        <label for="price">Price:</label>
-                        <input type="number" id="price" name="price" />
+                            <label for="price">Price:</label>
+                            <input type="number" id="price" name="price" />
 
-                        <input type="submit" value="Submit"/>
-                    </form>
-        </div>
+                            <input type="submit" value="Submit"/>
+                        </form>
+                    </div>
                 </main>
 
             </div>

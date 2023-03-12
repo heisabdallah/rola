@@ -1,0 +1,51 @@
+$form-bg-color: #f4f4f4;
+$input-border-color: #ccc;
+$input-focus-border-color: #555;
+$label-color: #555;
+$submit-button-bg-color: #4CAF50;
+$submit-button-color: #fff;
+
+.form {
+  background-color: $form-bg-color;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    
+    label {
+      color: $label-color;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+      border: 1px solid $input-border-color;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      
+      &:focus {
+        border-color: $input-focus-border-color;
+      }
+    }
+    
+    input[type="submit"] {
+      background-color: $submit-button-bg-color;
+      color: $submit-button-color;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: darken($submit-button-bg-color, 10%);
+      }
+    }
+  }
+}
