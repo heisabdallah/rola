@@ -26,6 +26,7 @@ const productsComp = () => {
             method: 'DELETE'
         })
         const data = await response.json()
+        
     }
 
     return ( 
@@ -35,7 +36,6 @@ const productsComp = () => {
                 ) : (
                 products.map(product => (
                 <div key={product._id} className={styles.data}>
-                    {console.log(product._id)}
                     <p>Name: {product.name}</p>
                     <p>Make: {product.make}</p>
                     <p>Model: {product.model}</p>
