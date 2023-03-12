@@ -22,6 +22,7 @@ const productsComp = () => {
     }, [])
 
     const handledelete = async (productId) => {
+        console.log("clicked");
         const response = await fetch(`${productAPI}/${productId}`, {
             method: 'DELETE'
         })
