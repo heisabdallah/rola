@@ -34,13 +34,13 @@ const productsComp = () => {
                 <div className={styles.loading}><Loading /></div>
                 ) : (
                 products.map(product => (
-                <div key={product.id} className={styles.data}>
-                    {console.log(product.id)}
+                <div key={product._id} className={styles.data}>
+                    {console.log(product._id)}
                     <p>Name: {product.name}</p>
                     <p>Make: {product.make}</p>
                     <p>Model: {product.model}</p>
                     <p>Price: {product.price}</p>
-                    <button onClick={() => handledelete(product.id)}>DELETE</button>
+                    <button onClick={() => handledelete(product._id)}>DELETE</button>
                 </div>
                 ))
             )}
