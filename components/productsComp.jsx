@@ -22,7 +22,6 @@ const productsComp = () => {
     }, [])
 
     const handledelete = async (productId) => {
-        console.log("clicked");
         const response = await fetch(`${productAPI}/${productId}`, {
             method: 'DELETE'
         })
@@ -33,8 +32,6 @@ const productsComp = () => {
         <div className={styles.products}>
             {loading ? (
                 <div className={styles.loading}><Loading /></div>
-                
-                // <p className={styles.loading}>Loading...</p>
                 ) : (
                 products.map(product => (
                 <div key={product.id} className={styles.data}>
@@ -42,7 +39,7 @@ const productsComp = () => {
                     <p>Make: {product.make}</p>
                     <p>Model: {product.model}</p>
                     <p>Price: {product.price}</p>
-                    <button onClick={handledelete}>DELETE</button>
+                    <button onClick={() => handledelete(product.id)}>DELETE</button>
                 </div>
                 ))
             )}
