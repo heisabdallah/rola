@@ -60,7 +60,7 @@ const Products = () => {
                     </Link>
                 </header>
                 <main className={styles.main} onClick={handleCloseNav}>
-                    <h1>Products PAGE</h1>
+                    <h1>All Products</h1>
                     <ProductsComp />
                     <div className={formStyle.form}>
                     <h3>Add a Product</h3><br></br>
