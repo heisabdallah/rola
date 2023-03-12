@@ -21,7 +21,7 @@ const productsComp = () => {
     }, [])
 
     return ( 
-        <div>
+        <div className={styles.products}>
             {loading ? (
                 <p className={styles.loading}>Loading...</p>
                 ) : (
