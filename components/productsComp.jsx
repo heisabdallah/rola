@@ -22,7 +22,7 @@ const productsComp = () => {
     }, [])
 
     const handledelete = async (productId) => {
-        const response = await fetch(`${productAPI}/${productId}`, {
+        const response = await fetch(`${productAPI}/?productId=${productId}`, {
             method: 'DELETE'
         })
         const data = await response.json()
