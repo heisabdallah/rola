@@ -27,7 +27,6 @@ const productsComp = () => {
             method: 'DELETE'
         })
         const data = await response.json()
-        fetchProducts()
     }
 
     return ( 
