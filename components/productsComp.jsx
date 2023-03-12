@@ -35,6 +35,7 @@ const productsComp = () => {
                 ) : (
                 products.map(product => (
                 <div key={product.id} className={styles.data}>
+                    {console.log(product.id)}
                     <p>Name: {product.name}</p>
                     <p>Make: {product.make}</p>
                     <p>Model: {product.model}</p>
