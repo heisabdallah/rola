@@ -1,10 +1,12 @@
-import styles from "../styles/products.module.scss"
+import styles from "../styles/pages/products.module.scss"
 import image1 from "public/images/rola1.jpg"
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import CustomHead from "../components/props/customHead"
 import logo from "public/logo.png"
+import ProductsComp from "../components/productsComp"
+import postProduct from "../components/postProduct"
 
 const Products = () => {
 
@@ -63,7 +65,8 @@ const Products = () => {
                         src={image1}
                     />
                     <p>Eiusmod eu nulla ad duis veniam mollit commodo commodo dolor. Id cillum occaecat voluptate ipsum et laboris proident occaecat occaecat. Quis aliqua veniam aute duis qui velit ea aute laborum. Tempor consectetur mollit aliqua excepteur occaecat voluptate aliquip exercitation eu enim. Occaecat qui proident excepteur sunt laborum minim consequat. Consequat aliqua officia deserunt quis commodo proident aliqua enim culpa aute. Fugiat cillum deserunt aliqua fugiat dolor elit commodo.</p>
-
+                    <ProductsComp />
+                    <postProduct />
                 </main>
 
             </div>

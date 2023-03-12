@@ -1,6 +1,6 @@
 import Image from "next/image"
 import MainContent from "@/components/MainContent"
-import styles from "../styles/index.module.scss"
+import styles from "../styles/pages/index.module.scss"
 import CustomHead from "../components/props/customHead"
 import Link from "next/link"
 import { useState } from "react"
