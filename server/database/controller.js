@@ -59,7 +59,6 @@ const deleteProduct = async (req, res) => {
         const { productId } = req.query
         const product = await Product.findByIdAndDelete(productId)
         res.status(200).json({ deleted: productId })
-        res.redirect(302, '/products');
 
     } catch (error) {
         res.status(404).json({error: "Error while Deleting Product!"})

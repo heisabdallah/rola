@@ -24,10 +24,16 @@ const productsComp = () => {
     const handledelete = async (productId) => {
         const response = await fetch(`${productAPI}/?productId=${productId}`, {
             method: 'DELETE'
-        })
-        const data = await response.json()
-        
-    }
+        });
+        const data = await response.json();
+    
+        if (response.ok) {
+            // Remove the deleted product from the products state
+            setProducts(products.filter(product => product._id !== productId));
+        } else {
+            console.error(`Failed to delete product with ID ${productId}`);
+        }
+    };
 
     return ( 
         <div className={styles.products}>
