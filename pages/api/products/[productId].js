@@ -1,5 +1,5 @@
 import connectDB from "../../../server/database/connection"
-import { getProduct } from "../../../server/database/controller"
+import { getProduct, deleteProduct } from "../../../server/database/controller"
 
 
 export default async function handler(req, res) {
@@ -11,6 +11,9 @@ export default async function handler(req, res) {
     switch(method){
       case 'GET':
         await getProduct(req, res)
+        break;
+      case 'DELETE':
+        await deleteProduct(req, res)
         break;
       default:
         res.setHeader('Allow', ['GET', 'POST', 'PUT', 'DELETE'])
