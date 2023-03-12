@@ -7,12 +7,13 @@ import CustomHead from "../components/props/customHead"
 import logo from "public/logo.png"
 import ProductsComp from "../components/productsComp"
 
+
 const Products = () => {
 
     const [nav, setNav] = useState(styles.nav)
 
     const handleOpenNav = () => {
-        setNav(styles.openNav)
+        setNav(styles.openNav) 
     }
 
     const handleCloseNav = () => {

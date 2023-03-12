@@ -1,5 +1,6 @@
 import styles from "../styles/components/productsComp.module.scss"
 import { useState, useEffect } from "react";
+import Loading from "components/loading"
 
 const productsComp = () => {
 
@@ -23,7 +24,9 @@ const productsComp = () => {
     return ( 
         <div className={styles.products}>
             {loading ? (
-                <p className={styles.loading}>Loading...</p>
+                <div className={styles.loading}><Loading /></div>
+                
+                // <p className={styles.loading}>Loading...</p>
                 ) : (
                 products.map(product => (
                 <div key={product.id} className={styles.data}>
