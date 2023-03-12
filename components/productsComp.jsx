@@ -11,8 +11,8 @@ const productsComp = () => {
 
     useEffect(() => {
         const fetchProducts = async () => {
-            const res = await fetch(productAPI)
-            const data = await res.json()
+            const response = await fetch(productAPI)
+            const data = await response.json()
 
             setProducts(data)
             setLoading(false);
@@ -20,6 +20,13 @@ const productsComp = () => {
         }
         fetchProducts()
     }, [])
+
+    const handledelete = async (productId) => {
+        const response = await fetch(`${productAPI}/${productId}`, {
+            method: 'DELETE'
+        })
+        const data = response.json()
+    }
 
     return ( 
         <div className={styles.products}>
@@ -34,6 +41,7 @@ const productsComp = () => {
                     <p>Make: {product.make}</p>
                     <p>Model: {product.model}</p>
                     <p>Price: {product.price}</p>
+                    <button onClick={handledelete}>DELETE</button>
                 </div>
                 ))
             )}
