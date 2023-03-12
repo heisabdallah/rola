@@ -5,6 +5,7 @@ const postProduct = () => {
 
     return ( 
         <div className={styles.form}>
+            <h2>Add a Product</h2>
             <form method="POST" action={productAPI} >
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" />
