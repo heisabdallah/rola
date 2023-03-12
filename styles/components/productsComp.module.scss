@@ -1,25 +1,5 @@
-// Parent container styles
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-  }
-  
-  // Loading message styles
-  .loading {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #888;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  // Product item styles
-  .data {
+/* Product item styles */
+.data {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,23 +9,33 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    width: calc(33.33% - 20px);
-  
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-  
+    width: calc(33.33% - 20px); /* default width for desktop */
+    
     p {
       font-size: 1.2rem;
       margin: 5px 0;
       text-align: center;
     }
   
-    // Hover effect styles
+    /* Hover effect styles */
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Media queries for mobile styling */
+    @media screen and (max-width: 767px) {
+      width: 100%; /* full width for mobile */
+      margin-left: 0;
+      margin-right: 0;
+  
+      h3 {
+        font-size: 1.5rem;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
     }
   }
   
