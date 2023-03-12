@@ -63,6 +63,7 @@ const Products = () => {
                     <h1>Products PAGE</h1>
                     <ProductsComp />
                     <div className={formStyle.form}>
+                    <h3>Add a Product</h3><br></br>
                         <form method="POST" action={productAPI} >
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" />
