@@ -42,10 +42,10 @@ const productsComp = () => {
                 ) : (
                 products.map(product => (
                 <div key={product._id} className={styles.data}>
-                    <p>Name: {product.name}</p>
-                    <p>Make: {product.make}</p>
-                    <p>Model: {product.model}</p>
-                    <p>Price: {product.price}</p>
+                    <p><b>Name:</b> {product.name}</p>
+                    <p><b>Make:</b> {product.make}</p>
+                    <p><b>Model:</b> {product.model}</p>
+                    <p><b>Price:</b> {product.price}</p>
                     <br></br>
                     <button onClick={() => handledelete(product._id)}>DELETE</button>
                 </div>
