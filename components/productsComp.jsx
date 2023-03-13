@@ -45,7 +45,7 @@ const productsComp = () => {
                     <p><b>Name:</b> {product.name}</p>
                     <p><b>Make:</b> {product.make}</p>
                     <p><b>Model:</b> {product.model}</p>
-                    <p><b>Price:</b> {product.price}</p>
+                    <p><b>Price:</b> {`Tsh ${product.price} /=`}</p>
                     <br></br>
                     <button onClick={() => handledelete(product._id)}>DELETE</button>
                 </div>
