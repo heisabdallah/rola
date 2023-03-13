@@ -1,7 +1,9 @@
 .directions {
+    display: inline-block;
     text-decoration: none;
     color: black;
     padding: 1em;
+    margin: 1em;
     font-size: 13px;
     background-image: radial-gradient(rgb(120, 0, 0), black);
     color: white;

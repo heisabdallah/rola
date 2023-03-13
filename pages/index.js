@@ -2,6 +2,7 @@ import styles from "styles/pages/index.module.scss"
 import CustomHead from "components/props/customHead"
 import GetDirections from "components/buttons/getDirections"
 import ImageGrid from "@/components/imageGrid"
+import GoogleMap from "@/components/googleMap"
 import ContactForm from "@/components/contactForm"
 import AboutUs from "@/components/aboutUs"
 import Link from "next/link"
@@ -35,6 +36,7 @@ export default function Home(){
                     </main>
 
                     <footer className={styles.footer} id="contact-section">
+                        <GoogleMap />
                         <ContactForm />
                         <AboutUs />
                     </footer>
