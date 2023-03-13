@@ -34,13 +34,12 @@
         color: white;
         background-color: teal;
         cursor: pointer;
-        float: right;
+        margin-left: auto; /* new */
         &:hover{
           background-color: black;
         }
       }
-    
-    
+      
   
     /* Hover effect styles */
     &:hover {
