@@ -2,7 +2,7 @@ import styles from "../styles/components/productsComp.module.scss"
 import { useState, useEffect } from "react";
 import Loading from "components/loading"
 
-const productsComp = () => {
+const ProductsComp = () => {
 
     const productAPI = "api/products"
 
@@ -55,4 +55,4 @@ const productsComp = () => {
      );
 }
  
-export default productsComp;
+export default ProductsComp;

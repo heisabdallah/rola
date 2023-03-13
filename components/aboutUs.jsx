@@ -1,7 +1,7 @@
-import styles from "../styles/components/MainContent.module.scss";
+import styles from "../styles/components/aboutUs.module.scss";
 
 
-export default function MainContent(){
+export default function AboutUs(){
     return(
         <div className={styles.container}>
             <section className={styles.article}>

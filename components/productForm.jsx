@@ -1,11 +1,12 @@
+import styles from "styles/components/productForm.module.scss"
 
-const postProduct = () => {
+const ProductForm = () => {
 
     const productAPI = "api/products"
 
     return ( 
         <div className={styles.form}>
-            <h2>Add a Product</h2>
+            <h3>Add a Product</h3><br></br>
             <form method="POST" action={productAPI} >
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" />
@@ -25,4 +26,4 @@ const postProduct = () => {
      );
 }
  
-export default postProduct;
+export default ProductForm;

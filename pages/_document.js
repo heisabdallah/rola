@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en" style={{scrollBehavior:'smooth'}} >
       <Head />
-      <body>
+      <body >
         <Main />
         <NextScript />
       </body>

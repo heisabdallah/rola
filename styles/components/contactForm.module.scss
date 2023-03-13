@@ -1,0 +1,49 @@
+.contact_section {
+    margin: 6em 0;
+}
+
+.form {
+    background-color: white;
+    margin: 2em;
+    padding: 2em 0;
+    border-radius: 20px;
+    h1 {
+        font-size: 2rem;
+        color: black;
+    }
+
+    form {
+        input {
+            padding: 2em;
+            margin: 2em;
+            border: 2px solid rgba(0, 0, 0, 0.307);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.307);
+            border-radius: 20px;
+        }
+
+        .submit_btn {
+            text-transform: uppercase;
+            font-weight: 800;
+            padding: 2em 5em;
+            border: none;
+            border-radius: 20px;
+            background-image: radial-gradient(black, rgb(0, 21, 19),);
+            color: white;
+            &:active{
+                background-image: radial-gradient(black, rgb(37, 1, 1),);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .contact_section {
+        display: flex;
+        justify-content: center;
+        }
+
+        .form {
+            // width: 20vw;
+            padding: 5em;
+        }
+}
