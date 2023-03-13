@@ -5,98 +5,9 @@
     text-align: center;
     gap: .5em;
 
-    .header {
-        position: fixed;
-        background-color: white;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.307);
-        padding: 1em;
-        display: flex;
-        justify-content: space-between;
-        width: 100vw;
-        z-index: 999;
-        
-        .menuBtn {
-            fill: black;
-            width: 2.5em;
-            height: 2.5em;
-            transition: all ease .2s;
-            &:active{
-                fill: rgb(220, 148, 5);
-            }
-        }
-    
-        .logo {
-            margin: 0 0 0 1.5em;
-        }
-    
-        h3 {
-            margin: .8em 0 0 1em;
-            font-weight: 900;
-        }
-
-        nav {
-            position: fixed;
-            left: 0;
-            top: 0;
-            background-color: white;
-            box-shadow: 1px 0 40px rgb(100, 100, 100);
-            height: 100vh;
-            width: 50%;
-            text-transform: uppercase;
-            transform: translateX(-120%);
-            transition: all .5s ease-in-out;
-            
-            .closeBtn {
-                fill: black;
-                float: left;
-                margin: 1em;
-                width: 3em;
-                transition: all ease .2s;
-                &:active{
-                    fill: red;
-                }
-            }
-    
-            ul {
-                list-style: none;
-                padding: 5em 0 0 0;
-                font-size: 1.3rem;
-                text-align: left;
-                a {
-                    text-decoration: none;
-                    padding: 1em 2em;
-                    color: black;
-                    display: block;
-                    // font-size: 1.3rem;
-                    &:hover {
-                        background-color: black;
-                        color: white;
-                    }
-                }
-            }
-        }
-    
-        .openNav {
-            transform: translateX(0%);
-        }
-    
-        .closeNav {
-            transform: translateX(-120%);
-        }
-    
-    }
-
     .main {
         padding-top: 10em;
         height: 100vh;
-
-        img {
-            width: 100vw;
-            height: auto;
-        }
-        .form {
-            margin: 2em 5em;
-        }
     }
 }
 
@@ -113,81 +24,8 @@
         grid-template-columns: 1fr;
         grid-template-rows: .1fr 1fr .1fr;
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            
-            h3 {
-                margin: .1em 0 0 1em;
-            }
-
-            .menuBtn {
-                display: none;
-            }
-        
-            .logo {
-                margin: 0 0 0 1.5em;
-            }
-
-            nav {
-                position: static;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: transparent;
-                border-radius: 10px;
-                padding: .3em 1em;
-                box-shadow: none;
-                width: auto;
-                height: auto;
-                text-transform: uppercase;
-                transform: none;
-                transition: none;
-                // display: none;
-                
-                .closeBtn {
-                    display: none;
-                }
-        
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    font-size: 1.3rem;
-                    text-align: center;
-                    li {
-                        display: inline-block;
-                    }
-                    a {
-                        text-decoration: none;
-                        padding: .5em .5em .5em .5em;
-                        color: black;
-                        font-weight: 600;
-                        display: inline;
-                        &:hover {
-                            border-radius: 10px;
-                        }
-                    }
-                }
-            }
-            .closeNav {
-                transform: none;
-            }
-        }
-
         .main {
             grid-area: main;
-    
-            .imageGrid {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                
-                img {
-                    width: 33vw;
-                    height: 40vh;
-                    object-fit: cover;
-                }
-            }
         }
         
         .footer {

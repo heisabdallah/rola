@@ -1,23 +1,9 @@
-import Image from "next/image"
-import MainContent from "@/components/aboutUs"
+import AboutUs from "@/components/aboutUs"
 import styles from "../styles/pages/index.module.scss"
 import CustomHead from "../components/props/customHead"
 import ContactForm from "@/components/contactForm"
-import Link from "next/link"
-import { useState } from "react"
-import logo from "public/logo.png"
 
 const Contact = () => {
-
-    const [nav, setNav] = useState(styles.nav)
-
-    const handleOpenNav = () => {
-        setNav(styles.openNav)
-    }
-
-    const handleCloseNav = () => {
-        setNav(styles.closeNav)
-    }
 
     return ( 
         <>
@@ -28,10 +14,9 @@ const Contact = () => {
                 url="https://www.rolaspareparts.com/contact/"
             />
             <div className={styles.container}>
-                <footer className={styles.footer} onClick={handleCloseNav}>
+                <footer className={styles.footer}>
                     <ContactForm />
-                    
-                    <MainContent />
+                    <AboutUs />
                 </footer>
             </div>
         </>

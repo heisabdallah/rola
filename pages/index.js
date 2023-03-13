@@ -1,25 +1,12 @@
 import styles from "styles/pages/index.module.scss"
 import CustomHead from "components/props/customHead"
-// import GetDirections from "components/buttons/getDirections"
+import GetDirections from "components/buttons/getDirections"
 import ImageGrid from "@/components/imageGrid"
 import ContactForm from "@/components/contactForm"
-import Link from "next/link"
-import Image from "next/image"
-import logo from "public/logo.png"
-import { useState } from "react"
 import AboutUs from "@/components/aboutUs"
+import Link from "next/link"
 
 export default function Home(){
-    
-    const [nav, setNav] = useState(styles.nav)
-
-    const handleOpenNav = () => {
-        setNav(styles.openNav)
-    }
-
-    const handleCloseNav = () => {
-        setNav(styles.closeNav)
-    }
 
     return (
         <>
@@ -30,14 +17,14 @@ export default function Home(){
                 url="https://www.rolaspareparts.com/home/"
             />
             <div className={styles.container}>
-                    <main className={styles.main} onClick={handleCloseNav}>
+                    <main className={styles.main}>
                         <section>
                             <div className={styles.hero_section}>
                                 <h1>Affordable meets excellence</h1>
                                  <button className={styles.hero_cta}><Link href="/products">Browse Our Products</Link></button>
                             </div>
                         </section>
-                        {/* <GetDirections /> */}
+                        <GetDirections />
                         <Link className={styles.contact_scroll} href="#contact-section" scroll={false} >Contact Section</Link>
                         <section>
                             <AboutUs />
@@ -47,7 +34,7 @@ export default function Home(){
                         </section>
                     </main>
 
-                    <footer className={styles.footer} onClick={handleCloseNav} id="contact-section">
+                    <footer className={styles.footer} id="contact-section">
                         <ContactForm />
                         <AboutUs />
                     </footer>
