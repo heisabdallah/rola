@@ -32,5 +32,13 @@
   "devDependencies": {
     "sass": "^1.59.2",
     "sass-loader": "^10.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heisabdallah/rola.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heisabdallah/rola/issues"
+  },
+  "homepage": "https://github.com/heisabdallah/rola#readme"
 }
