@@ -38,8 +38,8 @@ function Feedbacks() {
                         feedbacks.map(feedback => (
                             <div key={feedback._id} className={styles.data}>
                                 <p><b>Name:</b> {feedback.name}</p>
-                                <p><b>Make:</b> {feedback.message}</p>
-                                <p><b>Model:</b> {feedback.email}</p>
+                                <p><b>Message:</b> {feedback.message}</p>
+                                <p><b>Email:</b> {feedback.email}</p>
                             </div>
                         ))
                     )}
