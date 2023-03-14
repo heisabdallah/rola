@@ -35,10 +35,10 @@
         width: 50%;
         text-transform: uppercase;
         @keyframes slidetoLeft {
-            0% {
+            100% {
               transform: translateX(-118%);
             }
-            100% {
+            0% {
               transform: translateX(-120%);
             }
           }
@@ -77,7 +77,7 @@
     .openNav {
         z-index: 2;
         // visibility: visible;
-        @keyframes slideInfromLeft {
+        @keyframes slidetoLeft {
             0% {
               transform: translateX(-120%);
             }
