@@ -70,7 +70,7 @@ const postFeedback = async (req, res) => {
     try {
         const formData = req.body;
         await Feedback.create(formData)
-        res.redirect(302, '/feedback');
+        res.redirect(302, '/thankyou');
     } catch (error) {
         console.log(error);
     }
