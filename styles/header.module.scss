@@ -34,7 +34,7 @@
         height: 100vh;
         width: 50%;
         text-transform: uppercase;
-        transform: translateX(-120%);
+        // transform: translateX(-120%);
         transition: all .5s ease-in-out;
         
         .closeBtn {
@@ -69,7 +69,15 @@
     .openNav {
         visibility: visible;
         z-index: 2;
-        transform: translateX(0%);
+        // transform: translateX(0%);
+        @keyframes slideInFromLeft {
+            0% {
+              transform: translateX(-120%);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
     }
 
     .closeNav {
