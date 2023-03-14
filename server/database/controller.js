@@ -71,9 +71,6 @@ const postFeedback = async (req, res) => {
         const formData = req.body;
         await Feedback.create(formData)
         res.redirect(302, '/feedback');
-        setTimeout(() =>{
-            res.redirect('/');
-        },3000)
     } catch (error) {
         console.log(error);
     }
