@@ -1,18 +1,31 @@
 import styles from "../styles/pages/feedback.module.scss"
 import CustomHead from "../components/props/customHead"
-import { useEffect } from 'react';
+import { useState ,useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 
 const Feedback = () => {
 
     const router = useRouter();
+    const [countdown, setCountdown] = useState(5);
+
+    useEffect(() => {
+        const counter = setTimeout(() => {
+        setCountdown(countdown - 1);
+        }, 1000);
+
+        if (countdown === 0) {
+        clearTimeout(counter);
+        }
+
+        return () => clearTimeout(counter);
+    }, [countdown]);
 
     useEffect(() => {
         // Redirect to the home page after 5 seconds
         const timer = setTimeout(() => {
         router.push('/');
-        }, 3000);
+        }, 6000);
 
         // Clear the timer when the component is unmounted
         return () => clearTimeout(timer);
@@ -32,7 +45,7 @@ const Feedback = () => {
                     <br></br>
                     <p>We will get back to you as soon as possible.</p>
                     <br></br><br></br>
-                    <p>redirecting to homepage...</p>
+                    <p>redirecting to homepage in.. {countdown}</p>
                 </main>
             </div>
         </>
