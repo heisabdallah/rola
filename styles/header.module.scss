@@ -82,6 +82,9 @@
     .closeNav {
         visibility: visible;
         transform: translateX(-120%);
+        .closeBtn {
+            visibility: hidden;
+        }
     }
 }
 
