@@ -1,10 +1,10 @@
-import styles from "../styles/pages/feedback.module.scss"
+import styles from "../styles/pages/thankyou.module.scss"
 import CustomHead from "../components/props/customHead"
 import { useState ,useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 
-const Feedback = () => {
+const ThankYou = () => {
 
     const router = useRouter();
     const [countdown, setCountdown] = useState(5);
@@ -34,10 +34,10 @@ const Feedback = () => {
     return ( 
         <>
             <CustomHead
-                title="Feedback"
-                description="Rola spare parts Feedback Sent"
+                title="Thanks"
+                description="Rola spare parts Thanks"
                 keywords="rola spare parts, used spare parts, car spare parts tanzania"
-                url="https://www.rolaspareparts.com/feedback"
+                url="https://www.rolaspareparts.com/thankyou"
             />
             <div className={styles.container}>
                 <main className={styles.main}>
@@ -52,4 +52,4 @@ const Feedback = () => {
      );
 }
  
-export default Feedback;
+export default ThankYou;
