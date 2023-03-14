@@ -67,12 +67,12 @@
     }
 
     .openNav {
-        visibility: visible;
         z-index: 2;
         // transform: translateX(0%);
         @keyframes slideInFromLeft {
             0% {
               transform: translateX(-120%);
+              visibility: visible;
             }
             100% {
               transform: translateX(0);
