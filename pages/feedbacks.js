@@ -1,6 +1,7 @@
 import styles from "../styles/pages/feedbacks.module.scss"
 import { useState, useEffect } from "react";
 import Loading from "components/loading"
+import CustomHead from "@/components/props/customHead";
 
 function Feedbacks() {
 
