@@ -42,6 +42,7 @@
         
         
         .closeBtn {
+            display: none;
             fill: black;
             float: left;
             margin: 1em;
@@ -73,11 +74,17 @@
     .openNav {
         visibility: visible;
         transform: translateX(0%);
+        .closeBtn{
+            display: inline;
+        }
     }
 
     .closeNav {
         visibility: visible;
         transform: translateX(-120%);
+        .closeBtn{
+            display: inline;
+        }
     }
 }
 
