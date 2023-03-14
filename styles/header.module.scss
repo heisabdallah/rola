@@ -26,7 +26,7 @@
     }
 
     nav {
-        transform: translateX(-300%);
+        transform: translateX(-120%);
         visibility: hidden;
         position: fixed;
         left: 0;
@@ -42,6 +42,7 @@
         
         
         .closeBtn {
+            visibility: hidden;
             fill: black;
             float: left;
             margin: 1em;
@@ -73,6 +74,9 @@
     .openNav {
         visibility: visible;
         transform: translateX(0%);
+        .closeBtn {
+            visibility: visible;
+        }
     }
 
     .closeNav {
