@@ -1,58 +1,48 @@
 // Parent container styles
-.feedbacks {
-    padding: 20px;
-    margin-top: 6em;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    .loading {
-        margin: 0 0 20em 0;
-      }
-  }
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: .1fr 1fr .2fr;
+    text-align: center;
+    gap: .5em;
+
+    .main {
+        padding-top: 10em;
+        height: 100vh;
+        padding: 20px;
+        margin-top: 6em;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        .loading {
+            margin: 0 0 20em 0;
+        }
+    }
+    .data {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 100%; /* full width for mobile */
+          margin-left: 0;
+          margin-right: 0;
+      
+          p {
+            font-size: 1rem;
+            margin-bottom: .5em;
+          }
+    }
+}
   
   // Loading message styles
   
   
   /* Product item styles */
-.data {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 100%; /* full width for mobile */
-      margin-left: 0;
-      margin-right: 0;
-  
-      p {
-        font-size: 1rem;
-        margin-bottom: .5em;
-      }
 
-      button {
-        padding: .6em 1.1em;
-        border: none;
-        border-radius: 10px;
-        color: white;
-        background-color: teal;
-        cursor: pointer;
-        float: right;
-        margin-top: -30px;
-        &:hover{
-          background-color: black;
-        }
-      }
-      
-  
-    /* Hover effect styles */
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-    }
-}
   
     /* Media queries for desktop styling */
 @media screen and (min-width: 1025px) {
-    .products{
+    .main{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -69,9 +59,6 @@
         font-size: 1.2rem;
         margin: 5px 0;
         text-align: center;
-        }
-        button{
-          margin-top: 0px;
         }
    }  
 }

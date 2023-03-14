@@ -22,21 +22,30 @@ function Feedbacks() {
 
 
     return (
-        <div className={styles.container}>
-            <div className={styles.feedbacks}>
-                {loading ? (
-                    <div className={styles.loading}><Loading /></div>
-                    ) : (
-                    feedbacks.map(feedback => (
-                        <div key={feedback._id} className={styles.data}>
-                            <p><b>Name:</b> {feedback.name}</p>
-                            <p><b>Make:</b> {feedback.message}</p>
-                            <p><b>Model:</b> {feedback.email}</p>
-                        </div>
-                    ))
-                )}
+        <>
+            <CustomHead
+                title="Thanks"
+                description="Rola spare parts Thanks"
+                keywords="rola spare parts, used spare parts, car spare parts tanzania"
+                url="https://www.rolaspareparts.com/thankyou"
+            />
+            <div className={styles.container}>
+                <main className={styles.main}>
+                    {loading ? (
+                        <div className={styles.loading}><Loading /></div>
+                        ) : (
+                        feedbacks.map(feedback => (
+                            <div key={feedback._id} className={styles.data}>
+                                <p><b>Name:</b> {feedback.name}</p>
+                                <p><b>Make:</b> {feedback.message}</p>
+                                <p><b>Model:</b> {feedback.email}</p>
+                            </div>
+                        ))
+                    )}
+                </main>
             </div>
-        </div>
+        </>
+        
     );
 }
 
