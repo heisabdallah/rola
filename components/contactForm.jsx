@@ -1,11 +1,14 @@
 import styles from "styles/components/contactForm.module.scss"
 
 const ContactForm = () => {
+
+    const feedbackAPI = "api/feedback"
+
     return ( 
         <div className={styles.contact_section} >
             <div className={styles.form}>
                 <h1>Reach To Us</h1>
-                <form action="/feedback" method="POST">
+                <form action={feedbackAPI} method="POST">
                     {/* <label for="flname">Full name</label> */}
                     <input type="text" id="name" name="name" placeholder="Name" />
                     {/* <label for="email">Email</label> */}
