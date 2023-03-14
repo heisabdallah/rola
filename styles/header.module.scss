@@ -24,7 +24,6 @@
     }
 
     nav {
-        display: none;
         z-index: -2;
         position: fixed;
         left: 0;
@@ -67,16 +66,8 @@
     }
 
     .openNav {
-        display: block;
         z-index: 2;
-        @keyframes slidetoRight {
-            0% {
-                transform: translateX(-120%);
-            }
-            100% {
-                transform: translateX(0%);
-            }
-        }
+        transform: translateX(0%);
     }
 
     .closeNav {
