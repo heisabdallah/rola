@@ -27,7 +27,6 @@
 
     nav {
         transform: translateX(-120%);
-        visibility: hidden;
         position: fixed;
         left: 0;
         top: 0;
@@ -72,7 +71,6 @@
     }
 
     .openNav {
-        visibility: visible;
         transform: translateX(0%);
         .closeBtn{
             display: inline;
@@ -80,7 +78,6 @@
     }
 
     .closeNav {
-        visibility: visible;
         transform: translateX(-120%);
         .closeBtn{
             display: inline;
