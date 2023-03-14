@@ -24,6 +24,7 @@
     }
 
     nav {
+        visibility: hidden;
         z-index: -2;
         position: fixed;
         left: 0;
@@ -66,6 +67,7 @@
     }
 
     .openNav {
+        visibility: visible;
         z-index: 2;
         transform: translateX(0%);
     }
