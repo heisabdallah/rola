@@ -42,8 +42,8 @@
               transform: translateX(-120%);
             }
           }
-        // transform: translateX(-120%);
-        // transition: .5s ease-in-out;
+        transform: translateX(-120%);
+        transition: .5s ease-in-out;
         
         .closeBtn {
             fill: black;
@@ -77,27 +77,11 @@
     .openNav {
         z-index: 2;
         // visibility: visible;
-        @keyframes slidetoLeft {
-            0% {
-              transform: translateX(-120%);
-            }
-            100% {
-              transform: translateX(0%);
-            }
-          }
-        // transform: translateX(0%);
+        transform: translateX(0%);
     }
 
     .closeNav {
-        // transform: translateX(-120%);
-        @keyframes slidetoLeft {
-            0% {
-              transform: translateX(0%);
-            }
-            100% {
-              transform: translateX(-120%);
-            }
-          }
+        transform: translateX(-120%);
         z-index: -2;
     }
 }
