@@ -29,6 +29,7 @@
             border-radius: 20px;
             background-image: radial-gradient(black, rgb(0, 21, 19),);
             color: white;
+            cursor: pointer;
             &:active{
                 background-image: radial-gradient(black, rgb(37, 1, 1),);
             }
