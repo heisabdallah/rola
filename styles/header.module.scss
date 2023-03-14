@@ -24,7 +24,7 @@
     }
 
     nav {
-        visibility: hidden;
+        z-index: -2;
         position: fixed;
         left: 0;
         top: 0;
@@ -35,7 +35,6 @@
         text-transform: uppercase;
         transform: translateX(-120%);
         transition: all .5s ease-in-out;
-        visibility: visible;
         
         .closeBtn {
             fill: black;
@@ -67,11 +66,13 @@
     }
 
     .openNav {
+        z-index: 2;
         transform: translateX(0%);
     }
 
     .closeNav {
         transform: translateX(-120%);
+        z-index: -2;
     }
 }
 
