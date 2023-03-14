@@ -6,7 +6,9 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    z-index: 999;
+    z-index: 1;
+    will-change: transform;
+    transform-style: preserve-3d;
     
     .menuBtn {
         fill: black;
@@ -24,7 +26,6 @@
     }
 
     nav {
-        z-index: -2;
         position: fixed;
         left: 0;
         top: 0;
@@ -34,7 +35,9 @@
         width: 50%;
         text-transform: uppercase;
         transform: translateX(-120%);
-        transition: .5s ease-in-out;
+        transition: transform .5s ease-in-out;
+        will-change: transform;
+        transform-style: preserve-3d;
         
         .closeBtn {
             fill: black;
@@ -66,15 +69,14 @@
     }
 
     .openNav {
-        z-index: 2;
         transform: translateX(0%);
     }
 
     .closeNav {
         transform: translateX(-120%);
-        z-index: -2;
     }
 }
+
 
 @media screen and (min-width: 1025px) {
     .header {
