@@ -1,4 +1,4 @@
-import styles from "../styles/components/productsComp.module.scss"
+import styles from "../styles/pages/feedbacks.module.scss"
 import { useState, useEffect } from "react";
 import Loading from "components/loading"
 
