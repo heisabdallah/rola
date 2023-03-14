@@ -24,7 +24,7 @@
     }
 
     nav {
-        visibility: hidden;
+        // visibility: hidden;
         z-index: -2;
         position: fixed;
         left: 0;
@@ -35,10 +35,10 @@
         width: 50%;
         text-transform: uppercase;
         @keyframes slidetoLeft {
-            100% {
-              transform: translateX(-120%);
-            }
             0% {
+              transform: translateX(-118%);
+            }
+            100% {
               transform: translateX(-120%);
             }
           }
@@ -76,12 +76,28 @@
 
     .openNav {
         z-index: 2;
-        visibility: visible;
-        transform: translateX(0%);
+        // visibility: visible;
+        @keyframes slideInfromLeft {
+            0% {
+              transform: translateX(-120%);
+            }
+            100% {
+              transform: translateX(0%);
+            }
+          }
+        // transform: translateX(0%);
     }
 
     .closeNav {
-        transform: translateX(-120%);
+        // transform: translateX(-120%);
+        @keyframes slidetoLeft {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-120%);
+            }
+          }
         z-index: -2;
     }
 }
