@@ -7,7 +7,7 @@ const ContactForm = () => {
                 <h1>Reach To Us</h1>
                 <form action="/feedback" method="POST">
                     {/* <label for="flname">Full name</label> */}
-                    <input type="text" id="flname" name="flname" placeholder="Name" />
+                    <input type="text" id="name" name="name" placeholder="Name" />
                     {/* <label for="email">Email</label> */}
                     <input type="email" id="email" name="email" placeholder="Email" />
                     {/* <label for="message">Message</label> */}

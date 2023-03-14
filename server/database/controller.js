@@ -1,5 +1,6 @@
 
 import Product from "../model/productModel"
+import Feedback from "../model/feedbackModel"
 
 // GET 
 const getProducts = async (req, res) => {
@@ -65,10 +66,33 @@ const deleteProduct = async (req, res) => {
     }
 }
 
+const postFeedback = async (req, res) => {
+    try {
+        const formData = req.body;
+        await Feedback.create(formData)
+        res.redirect(302, '/');
+    } catch (error) {
+        res.redirect(302, '/');
+        console.log(error);
+    }
+}
+
+const getFeedbacks = async (req, res) => {
+    try{
+        const feedbacks = await Feedback.find({})
+        res.status(200).json(feedbacks)
+
+    }catch(error) {
+        res.status(404).json({ error: "No feedback found" })
+    }
+}
+
 export {
     getProducts,
     getProduct,
     postProducts,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    postFeedback,
+    getFeedbacks
 }

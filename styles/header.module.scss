@@ -139,6 +139,9 @@
       }
       .closeNav {
           transform: none;
+          .closeBtn {
+              display: none;
+          }
       }
   }
   }
