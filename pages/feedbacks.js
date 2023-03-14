@@ -22,7 +22,7 @@ function Feedbacks() {
 
 
     return (
-        <>
+        <div className={styles.container}>
             <div className={styles.feedbacks}>
                 {loading ? (
                     <div className={styles.loading}><Loading /></div>
@@ -36,8 +36,7 @@ function Feedbacks() {
                     ))
                 )}
             </div>
-        </>
-        
+        </div>
     );
 }
 
