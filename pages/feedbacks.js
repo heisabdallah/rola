@@ -25,10 +25,10 @@ function Feedbacks() {
     return (
         <>
             <CustomHead
-                title="Thanks"
-                description="Rola spare parts Thanks"
+                title="Feedbacks"
+                description="Rola spare parts Feedbacks"
                 keywords="rola spare parts, used spare parts, car spare parts tanzania"
-                url="https://www.rolaspareparts.com/thankyou"
+                url="https://www.rolaspareparts.com/feedbacks"
             />
             <div className={styles.container}>
                 <main className={styles.main}>
