@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from "public/logo.png"
 import { useState } from 'react'
+import AboutUs from '@/components/aboutUs'
 
 export default function App({ Component, pageProps }) {
 
@@ -49,6 +50,7 @@ export default function App({ Component, pageProps }) {
     <main onClick={handleCloseNav}>
       <Component {...pageProps} />
     </main>
+    
       
     </>
   )
