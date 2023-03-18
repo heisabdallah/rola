@@ -35,8 +35,12 @@ export default function Home(){
                         </section>
                     </main>
 
-                    <footer className={styles.footer} id="contact-section">
+                    <footer className={styles.footer} >
                         <GoogleMap />
+                        <GetDirections />
+                        <div id="contact-section">
+
+                        </div>
                         <ContactForm />
                         <AboutUs />
                     </footer>

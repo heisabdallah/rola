@@ -13,9 +13,15 @@ const About = () => {
                 url="https://www.rolaspareparts.com/about"
             />
             <div className={styles.container}>
+                <header>
+                    HEADER
+                </header>
                 <main className={styles.main}>
                     <AboutUs />
                 </main>
+                <footer>
+                    Footer
+                </footer>
             </div>
         </>
      )
